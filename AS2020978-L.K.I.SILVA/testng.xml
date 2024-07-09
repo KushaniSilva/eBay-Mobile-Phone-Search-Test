@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="url" value="https://www.ebay.com/"/>
+    <test verbose="2" preserve-order="true" name="C:/Users/Kushani Silva/IdeaProjects/AS2020978-L.K.I.SILVA">
+        <classes>
+            <class name="org.example.Main">
+                    <methods>
+                        <include name="navigateEbay"/>
+                        <include name="searchForMobilePhone"/>
+                        <include name="chooseFirstResults"/>
+                    </methods>
+            </class>
+            <class name="org.example.SelectMobile">
+                <methods>
+                    <include name="firstSelectItemName"/>
+                    <include name="firstSelectItemPrice"/>
+                    <include name="firstSelectItemQuantity"/>
+                    <include name="setColor"/>
+                    <include name="setPlug"/>
+                    <include name="setSize"/>
+                    <include name="selectCarrier"/>
+                    <include name="selectMemory"/>
+                    <include name="selectNetwork"/>
+                    <include name="selectModel"/>
+                    <include name="addToCart"/>
+                    <include name="checkOut"/>
+                    <include name="guestMode"/>
+                    <include name="assertCheckout"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
